@@ -10,7 +10,8 @@ app.get('/', function(req, res){
 });
 
 io.sockets.on('connection', function(socket){
-  console.log('a user connected');
+  console.log(socket.id +'  connected');
+  
   	for(var i = 0 ; i<allmsg.length ; i++){
   		  socket.emit('message',allmsg[i]);
   	} 
@@ -20,7 +21,7 @@ io.sockets.on('connection', function(socket){
 	}); 
 
 	socket.on('chat', function(msg){
-		console.log('Un client me parle ! Il me dit : ' + msg.msg);
+		console.log(msg.from +' : ' + msg.msg);
 		allmsg.push(msg);
 	   socket.broadcast.emit('message',msg);
 	});
