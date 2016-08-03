@@ -1,12 +1,13 @@
 {
-    "name": "ma-todolist",
-    "version": "0.1.0",
-    "dependencies": {
-        "express": "~4.11.0",
-        "ejs": "~2.1.4",
-        "cookie-session": "~1.1.0",
-        "body-parser": "~1.10.1"
-    },
-    "author": "Amadou DOumbia <doumbia.amado@gmail.com>",
-    "description": "TP : experimentation NodeJs"
+  "name": "ma-todolist",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "~1.10.1",
+    "cookie-session": "~1.1.0",
+    "ejs": "~2.1.4",
+    "express": "~4.11.0",
+    "socket.io": "^1.0.6"
+  },
+  "author": "Amadou DOumbia <doumbia.amado@gmail.com>",
+  "description": "TP : experimentation NodeJs"
 }
