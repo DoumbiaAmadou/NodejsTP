@@ -2,13 +2,13 @@
 <html>
   <head>
    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <title>Socket.IO chat</title>
+    <title>Private Message </title>
     <style>
        { margin: 0; padding: 0; box-sizing: border-box; }
-      #coremsg { font: 13px Helvetica, Arial;margin-bottom: 230px;}
+      #coremsg { font: 13px Helvetica, Arial;margin-bottom: 90px;}
       form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 90%; }
-      form input { border: 0; padding: 10px; width: 89%; margin-right: .3%; }
-      form button { width: 8%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+      form input { border: 0; padding: 10px; width: calc(100% - 125px)  }
+      form button { width: 100px; background: rgb(130, 224, 255); padding: 1px; height : 30px ; border: none;}
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
@@ -19,14 +19,13 @@
    <h1>RagotLand</h1>
 
    <div id="coremsg">
-     
-   </div>
-    <ul id="messages"> <h3></h1></ul>
+    <ul id="messages"> <h3></h3></ul>
     <form action="" id="form">
       <input id="m" autocomplete="off"/>
       <button type="submit" >Send</button>
     </form>
- 
+  </div>
+
     <script src="/socket.io/socket.io.js"></script> 
     <script>
      $('html,body').animate({scrollTop: document.body.scrollHeight},"fast");

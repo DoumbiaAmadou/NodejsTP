@@ -5,7 +5,7 @@ var io = require('socket.io')(http);
 var allmsg = []; 
 
 
-app.get('/', function(req, res){
+app.get('/chat', function(req, res){
   res.sendFile(__dirname + '/views/chat.html');
 });
 
